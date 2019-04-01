@@ -24,15 +24,21 @@ header {
     justify-content: space-between;
 }
 
+#header-fixed {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
 .logo-container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 30px 0 0 80px;
+    margin: 1.875rem 0 0 5rem;
 }
 
 .logo {
-    margin: 0 20px 0 0;
+    margin: 0 1.25rem 0 0;
 }
 
 .logo-container .text {
@@ -45,13 +51,13 @@ header {
 }
 
 .logo-container .text {
-    letter-spacing: 8px;
+    letter-spacing: 0.5rem;
     color: #000000;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 nav {
-    margin: 30px 60px 0 80px;
+    margin: 1.875rem 3.75rem 0 5rem;
 }
 
 nav ul {
@@ -70,9 +76,9 @@ nav ul li.item .active {
 }
 
 ul li.icon {
-    width: 22px;
-    height: 22px;
-    margin: 3px 2px;
+    width: 1.375rem;
+    height: 1.375rem;
+    margin: 0.1875rem 0.125rem;
 }
 
 ul li.icon a {
@@ -84,7 +90,7 @@ ul li.icon a {
 nav ul li.item a {
     display: block;
     text-decoration: none;
-    padding: 5px 8px;
+    padding: 0.3125rem 0.5rem;
     color: #535353;
     transition: .5s;
     font: normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496, sans-serif
@@ -95,6 +101,112 @@ nav ul li.item a:not(.active):hover {
 }
 
 li.icon img {
-    width: 22px;
-    height: 22px;
+    width: 1.375rem;
+    height: 1.375rem;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+}
+
+.content .leftside {
+    flex: 1;
+}
+
+.content .rightside {
+    flex: 1;
+}
+
+.content .leftside img {
+    transform-origin: bottom left;
+    transform: skewY(-11deg) skewX(12deg);
+}
+
+.content .leftside .img-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 89px;
+    margin-right: 181px;
+}
+
+.rightside .img-container {
+    position: relative;
+    width: 505px;
+}
+
+.rightside .img-container img.first, img.second, img.third {
+    display: block;
+    width: 100%;
+}
+
+.rightside .img-container img.first {
+    animation-name: first-image;
+    animation-duration: 9s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    /* animation-delay: -10s; */
+}
+
+.rightside .img-container img.second {
+    position: absolute;
+    top: 0;
+    animation-name: second-image;
+    animation-duration: 9s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+.rightside .img-container img.third {
+    position: absolute;
+    top: 0;
+    animation-name: final-image;
+    animation-duration: 9s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes first-image {
+    0%, 20% {
+        opacity: 0;
+    }
+    33.3% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0;
+    }
+    80%, 100% {
+        opacity: 0;
+    }
+}
+
+@keyframes second-image {
+    0%, 20% {
+        opacity: 0;
+    }
+    33.3% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    80%, 100% {
+        opacity: 0;
+    }
+}
+
+@keyframes final-image {
+    0%, 20% {
+        opacity: 0;
+    }
+    33.3% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 0;
+    }
+    80%, 100% {
+        opacity: 1;
+    }
 }
