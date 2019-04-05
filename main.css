@@ -153,7 +153,14 @@ h2 {
 .leftside .app-icons {
   display: flex;
   justify-content: center;
-  margin: 1.75rem 2.3125rem 0 0;
+  margin: 1.75rem 0 0 0;
+}
+
+.app-icons .mac {
+  margin: 0 12px 0 0;
+}
+.app-icons .android {
+  margin: 0 0 0 12px;
 }
 .rightside .img-container img.first,
 img.second,
