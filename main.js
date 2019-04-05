@@ -15,7 +15,7 @@ $(document).ready(function() {
 
       document.getElementsByClassName("third")[0].className += " turn";
     }, 2 * 3 * 1000);
-    
+
     setTimeout(function() {
       var el = document.getElementsByClassName("turn");
       // console.log(el[0].className);
