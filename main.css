@@ -48,8 +48,8 @@ header {
 }
 
 .logo img {
-  width: 89px;
-  height: 26px;
+  width: 5.5625rem;
+  height: 1.625rem;
 }
 
 .logo-container .text {
@@ -120,20 +120,20 @@ li.icon img {
 .leftside .text {
   display: flex;
   justify-content: center;
-  margin: 0 0 0 30px;
+  margin: 0 0 0 1.875rem;
 }
 .leftside .text h1,
 span,
 h2 {
   columns: #000000;
-  font-size: 55px;
+  font-size: 3.4375rem;
   font-weight: 700;
 }
 .content .rightside {
   flex: 1;
 }
 
-.content .leftside img {
+.content .leftside img.pencil {
   transform-origin: bottom left;
   transform: skewY(-11deg) skewX(12deg);
 }
@@ -141,15 +141,20 @@ h2 {
 .content .leftside .img-container {
   display: flex;
   justify-content: flex-end;
-  margin-top: 89px;
-  margin-right: 181px;
+  margin-top: 5.5625rem;
+  margin-right: 11.3125rem;
 }
 
 .rightside .img-container {
-  width: 505px;
+  width: 30.9375rem;
   position: relative;
+  margin: 7.5rem 0 0 4.375rem;
 }
-
+.leftside .app-icons {
+  display: flex;
+  justify-content: center;
+  margin: 1.75rem 2.3125rem 0 0;
+}
 .rightside .img-container img.first,
 img.second,
 img.third {
