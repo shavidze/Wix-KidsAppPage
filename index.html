@@ -5,12 +5,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto+Condensed|ZCOOL+XiaoWei"
     rel="stylesheet" />
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="https://vjs.zencdn.net/7.4.1/video-js.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
   <script src="main.js"></script>
+
   <title>Kids App Landing Page</title>
 </head>
 
@@ -56,9 +62,7 @@
       </div>
       <div class="text">
         <div class="wrapper">
-          <h1>The App</h1>
-          <span>That Makes</span>
-          <h2>Reading Fun</h2>
+          <h1>The App <br>That Makes<br>Reading Fun</h1>
         </div>
       </div>
       <div class="app-icons">
@@ -71,10 +75,10 @@
       </div>
     </div>
     <div class="rightside">
-      <div class="img-container">
-        <img src="Images/Apple.png" class="first turn" alt="Image Here" />
-        <img src="Images/Bee.png" class="second" alt="Image Here" />
-        <img src="Images/Cat.png" class="third" alt="Image Here" />
+      <div id="showcase-animation" class="img-container">
+        <img src="Images/Apple.png" class="first fade" data-animation-idx='1' alt="Image Here" />
+        <img src="Images/Bee.png" class="second" data-animation-idx='2' alt="Image Here" />
+        <img src="Images/Cat.png" class="third" data-animation-idx='3' alt="Image Here" />
       </div>
     </div>
   </div>
@@ -151,8 +155,37 @@
         src="https://static.wixstatic.com/media/c22c23_c42aa7dcdc3d4e378a967019f512a6ca~mv2.png/v1/fill/w_134,h_39,al_c,q_80,usm_0.66_1.00_0.01/PlayStore-BTN_02.webp"
         alt="play store" class="android" />
     </div>
+  </div>
 
+  <div class="usage">
+    <div class="title">
+      <h2>How Children Can Use the App</h2>
+    </div>
+    <div class="video">
+      <iframe width="735" height="436" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+      </iframe>
+    </div>
+    <div class="description">
+      <h2>I'm a paragraph. Click here to add your own text and edit me. It’s easy.<br> Just click “Edit Text” or double
+        click me to add your own content<br> and make changes to the font.</h2>
+    </div>
+  </div>
+
+  <div class="baby-awards">
+    <p>Everybody Loves Readie!
+    </p>
+    <div class="reviews">
+      <div class="leftside">
+        <img
+          src="https://static.wixstatic.com/media/c22c23_9419db809e2e44a09597065c670860eb~mv2.png/v1/crop/x_74,y_46,w_1267,h_871/fill/w_442,h_306,al_c,q_80,usm_0.66_1.00_0.01/turtules.webp"
+          alt="Image here">
+      </div>
+      <div class="rightside">
+
+      </div>
+    </div>
   </div>
 </body>
+<script src='https://vjs.zencdn.net/7.4.1/video.js'></script>
 
 </html>

@@ -25,19 +25,18 @@ header {
 }
 
 #header-fixed {
+  padding: 23px 59px;
   position: sticky;
   top: 0;
   z-index: 10;
 }
 
 .logo-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 1.875rem 0 0 5rem;
+  display: inline-block;
 }
 
 .logo {
+  display: inline-block;
   margin: 0 1.25rem 0 0;
 }
 
@@ -51,13 +50,12 @@ header {
 }
 
 .logo-container .text {
+  display: inline-block;
+  position: relative;
+  top: -4px;
   letter-spacing: 0.5rem;
   color: #000000;
   font-size: 1.25rem;
-}
-
-nav {
-  margin: 1.875rem 3.75rem 0 5rem;
 }
 
 nav ul {
@@ -124,7 +122,7 @@ li.icon img {
   margin: 0 0 0 12.875rem;
 }
 
-.leftside .text h1, span, h2 {
+.leftside .text h1 {
   columns: #000000;
   font-size: 3.4375rem;
   font-weight: 700;
@@ -208,6 +206,7 @@ li.icon img {
 .card-deck {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   transform: translateY(-41%);
 }
 
@@ -216,6 +215,7 @@ li.icon img {
   height: 23.75rem;
   max-width: 25%;
   background: #FFF4F3;
+  margin: 15px 15px 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -253,6 +253,63 @@ li.icon img {
   margin: 1.9375rem 0 0 0;
 }
 
+.usage {
+  width: 100%;
+  height: 890px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.usage .title {
+  font-size: 25px;
+}
+
+.usage .description {
+  font-size: 12px;
+  line-height: 25px;
+}
+
+.baby-awards {
+  width: 100%;
+  height: 100px;
+  padding: 50px 0 0 0;
+  margin: 30px 0 0 0;
+}
+
+.baby-awards p {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.reviews {
+  display: flex;
+  justify-content: space-around;
+  width: 95%;
+  margin: auto;
+  padding: 50px 0;
+  margin: 50px 0;
+}
+
+.reviews .leftside {
+  min-width: 25%;
+  width: 720px;
+  height: 418px;
+  background: #FFF4F3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviews .rightside {
+  min-width: 25%;
+  width: 720px;
+  height: 418px;
+  background: #FFF4F3;
+}
+
 @keyframes appearing {
   0% {
     opacity: 0;
@@ -263,4 +320,13 @@ li.icon img {
   100% {
     opacity: 0;
   }
+}
+
+#showcase-animation img {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#showcase-animation img.fade {
+  opacity: 1;
 }
