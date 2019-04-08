@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -95,8 +93,7 @@ nav ul li.item a {
   padding: 0.3125rem 0.5rem;
   color: #535353;
   transition: 0.5s;
-  font: normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496,
-    sans-serif;
+  font: normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496, sans-serif;
 }
 
 nav ul li.item a:not(.active):hover {
@@ -120,15 +117,15 @@ li.icon img {
 .leftside .text {
   display: flex;
   justify-content: center;
-  margin: 0 0 0 1.875rem;
+  margin: 0 0 0 12.875rem;
 }
-.leftside .text h1,
-span,
-h2 {
+
+.leftside .text h1, span, h2 {
   columns: #000000;
   font-size: 3.4375rem;
   font-weight: 700;
 }
+
 .content .rightside {
   flex: 1;
 }
@@ -150,21 +147,22 @@ h2 {
   position: relative;
   margin: 7.5rem 0 0 4.375rem;
 }
+
 .leftside .app-icons {
   display: flex;
   justify-content: center;
-  margin: 1.75rem 0 0 0;
+  margin: 1.75rem 0 0 10rem;
 }
 
 .app-icons .mac {
   margin: 0 0.75rem 0 0;
 }
+
 .app-icons .android {
   margin: 0 0 0 0.75rem;
 }
-.rightside .img-container img.first,
-img.second,
-img.third {
+
+.rightside .img-container img.first, img.second, img.third {
   display: block;
   width: 100%;
   opacity: 0;
@@ -197,8 +195,7 @@ img.third {
   0% {
     opacity: 0;
   }
-  50%,
-  70% {
+  50%, 70% {
     opacity: 1;
   }
   100% {
