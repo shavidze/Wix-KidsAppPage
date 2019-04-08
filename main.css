@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -91,7 +93,8 @@ nav ul li.item a {
   padding: 0.3125rem 0.5rem;
   color: #535353;
   transition: 0.5s;
-  font: normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496, sans-serif;
+  font: normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496,
+    sans-serif;
 }
 
 nav ul li.item a:not(.active):hover {
@@ -166,7 +169,9 @@ li.icon img {
   margin: 0 0 0 0.75rem;
 }
 
-.rightside .img-container img.first, img.second, img.third {
+.rightside .img-container img.first,
+img.second,
+img.third {
   position: absolute;
   top: 0;
   width: 100%;
@@ -197,7 +202,7 @@ li.icon img {
 }
 
 .why-us {
-  background: #FCF6CC !important;
+  background: #fcf6cc !important;
   z-index: 20;
   width: 100%;
   height: 39.4375rem;
@@ -206,7 +211,6 @@ li.icon img {
 .card-deck {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
   transform: translateY(-41%);
 }
 
@@ -214,7 +218,7 @@ li.icon img {
   width: 20rem;
   height: 23.75rem;
   max-width: 25%;
-  background: #FFF4F3;
+  background: #fff4f3;
   margin: 15px 15px 0 0;
   display: flex;
   flex-direction: column;
@@ -232,7 +236,7 @@ li.icon img {
 
 .card-title span {
   display: block;
-  color: #716B6B;
+  color: #716b6b;
   font-size: 1.3125rem;
   line-height: 1.4em;
   font: sans-serif;
@@ -240,7 +244,7 @@ li.icon img {
 
 .message {
   text-align: center;
-  transform: translateY(-50%);
+  transform: translateY(-80%);
 }
 
 .message h1 {
@@ -270,7 +274,9 @@ li.icon img {
   font-size: 12px;
   line-height: 25px;
 }
-
+.description h2 {
+  text-align: center;
+}
 .baby-awards {
   width: 100%;
   height: 100px;
@@ -290,14 +296,15 @@ li.icon img {
   width: 95%;
   margin: auto;
   padding: 50px 0;
-  margin: 50px 0;
 }
 
 .reviews .leftside {
   min-width: 25%;
   width: 720px;
   height: 418px;
-  background: #FFF4F3;
+  margin: 0 20px 0 0;
+  background: #fff4f3;
+  z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -307,14 +314,67 @@ li.icon img {
   min-width: 25%;
   width: 720px;
   height: 418px;
-  background: #FFF4F3;
+  background: #fff4f3;
+  margin: 0 0 0 20px;
+  z-index: 10;
+}
+.award-winning {
+  background: #fcf6cc;
+  transform: translateY(-200px);
+  z-index: -1;
+  width: 100%;
+  height: 1300px;
+}
+.award-winning .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transform: translateY(220px);
+  padding: 0px 0px 150px 0;
+}
+.award-winning img {
+  width: 1149px;
+  max-width: 100%;
+  height: 657px;
+}
+.award-winning .text {
+  transform: translateY(-40px);
+}
+.award-winning .text p {
+  font-size: 25px;
+  font-weight: 700;
+}
+.award-winning .card-deck {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  /* transform: translateY(-50%); */
+}
+.award-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 200px;
+  height: 200px;
+  max-width: 100%;
+}
+.award-card img {
+  width: 105px;
+  height: 105px;
 }
 
+.award-card .description p {
+  font-size: 16px;
+  /* margin: 25px 0 0 0; */
+}
 @keyframes appearing {
   0% {
     opacity: 0;
   }
-  50%, 70% {
+  50%,
+  70% {
     opacity: 1;
   }
   100% {
