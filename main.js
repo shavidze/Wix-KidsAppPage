@@ -29,6 +29,7 @@ $(document).ready(function () {
   requestAnimationFrame(awaiter);
   $('a[href^=#]').on("click", function (e) {
     var t = $(this.hash);
+    console.log("hash", t);
     var t = t.length && t || $('[name=' + this.hash.slice(1) + ']');
     if (t.length) {
       var tOffset = t.offset().top;
