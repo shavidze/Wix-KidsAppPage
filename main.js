@@ -1,4 +1,4 @@
-$(document).ready(function () {
+(function () {
   //ამაზე ასხავს?xo
   // function awaiter() {
   //   setTimeout(function () {
@@ -61,5 +61,14 @@ $(document).ready(function () {
       e.preventDefault();
     }
   });
-  $(".owl-carousel").owlCarousel();
-});
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1
+      }
+    }
+  })
+})();

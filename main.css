@@ -314,7 +314,33 @@ li.icon img {
   background: #fff4f3;
   margin: 0 0 0 20px;
   display: flex;
+  align-items: center;
   z-index: 10;
+}
+
+.owl-carousel .item p {
+  font-size: 25px;
+  font-weight: 700;
+  margin: 50px 0 0 0;
+}
+
+.owl-nav {
+  display: none;
+}
+
+.owl-dots {
+  margin: 50px 0 0 0;
+}
+
+.owl-dot:focus {
+  outline: none;
+  border: none;
+}
+
+.rightside .item h4 {
+  font-size: 20px;
+  line-height: 25px;
+  color: #716B6A;
 }
 
 .rightside .item {
@@ -345,14 +371,6 @@ li.icon img {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-}
-
-#customswiper {
-  overflow: hidden;
-  width: auto;
-  max-width: 100%;
-  height: 200px;
-  transform: translate3d(0px 0px 0px) !important;
 }
 
 .reviews .swiper-slide p {
@@ -663,6 +681,10 @@ form input[type="submit"]:hover {
   transform: translateY(-300px);
   position: relative;
   z-index: -1;
+}
+
+.owl-carousel .item {
+  text-align: center;
 }
 
 @keyframes appearing {
