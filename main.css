@@ -502,6 +502,11 @@ form input[type="submit"] {
   cursor: pointer;
 }
 
+form input[type="submit"]:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
 .inputs input[type="text"] {
   margin: 0 20px 0 0;
 }
@@ -534,7 +539,9 @@ form input[type="submit"] {
   border: none;
 }
 
-.subscribe .email input[type="text"] :hover {}
+.subscribe .email input[type="text"]:hover {
+  outline: 2px solid #FC8A7B;
+}
 
 .subscribe .email {
   text-align: center;
@@ -555,9 +562,15 @@ form input[type="submit"] {
   cursor: pointer;
 }
 
+.subscribe input[type="submit"]:hover {
+  opacity: 0.8;
+  transition: opacity .5s;
+}
+
 .subscribe .rights {
   font-size: 16px;
   margin: 74px 0 0 0;
+  color: #7D7A7A;
 }
 
 .under {
