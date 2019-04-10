@@ -415,6 +415,45 @@ li.icon img {
   align-items: flex-start;
 }
 
+.right .slider {
+  width: 380px;
+  background: white;
+  overflow: hidden;
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2);
+  display: flex;
+}
+
+.slider::before, .slider::after {
+  width: 380px;
+  height: 550px;
+  position: absolute;
+  content: "";
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 3%);
+  z-index: 2;
+}
+
+.slide::before {
+  left: 0;
+  top: 0;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateY(180deg);
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  animation: slideshow 56s linear infinite;
+}
+
+.presentation .right img {
+  width: 380px;
+  height: 550px;
+}
+
 .presentation .app-icons {
   margin: 28px 0 0 100px;
 }
@@ -591,6 +630,18 @@ form input[type="submit"]:hover {
   }
   100% {
     opacity: 0;
+  }
+}
+
+@keyframes slideshow {
+  0% {
+    transform: translate(0);
+  }
+  70% {
+    transform: translate(-100%);
+  }
+  100% {
+    transform: translate(-100%);
   }
 }
 
