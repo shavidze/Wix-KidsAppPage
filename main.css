@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -39,7 +37,7 @@ header {
 
 .logo {
   display: inline-block;
-  margin: 0 1.25rem 0 0;
+  margin: 0 20px 0 0;
 }
 
 .logo-container .text {
@@ -47,17 +45,17 @@ header {
 }
 
 .logo img {
-  width: 5.5625rem;
-  height: 1.625rem;
+  width: 89px;
+  height: 26px;
 }
 
 .logo-container .text {
   display: inline-block;
   position: relative;
   top: -4px;
-  letter-spacing: 0.5rem;
+  letter-spacing: 8px;
   color: #000000;
-  font-size: 1.25rem;
+  font-size: 20px;
 }
 
 nav ul {
@@ -76,9 +74,9 @@ nav ul li.item .active {
 }
 
 ul li.icon {
-  width: 1.375rem;
-  height: 1.375rem;
-  margin: 0.1875rem 0.125rem;
+  width: 22px;
+  height: 22px;
+  margin: 3px 2px;
 }
 
 ul li.icon a {
@@ -90,11 +88,10 @@ ul li.icon a {
 nav ul li.item a {
   display: block;
   text-decoration: none;
-  padding: 0.3125rem 0.5rem;
+  padding: 5px 8px;
   color: #535353;
   transition: 0.5s;
-  font: normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496,
-    sans-serif;
+  font: normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496, sans-serif;
 }
 
 nav ul li.item a:not(.active):hover {
@@ -102,13 +99,13 @@ nav ul li.item a:not(.active):hover {
 }
 
 li.icon img {
-  width: 1.375rem;
-  height: 1.375rem;
+  width: 22px;
+  height: 22px;
 }
 
 .content {
   width: 100%;
-  height: 57.5rem;
+  height: 920px;
   min-height: 100%;
   display: flex;
 }
@@ -116,25 +113,25 @@ li.icon img {
 .content .leftside {
   flex: 1;
   height: 100%;
-  max-height: 50.8125rem;
+  max-height: 813px;
 }
 
 .leftside .text {
   display: flex;
   justify-content: center;
-  margin: 0 0 0 12.875rem;
+  margin: 0 0 0 206px;
 }
 
 .leftside .text h1 {
   columns: #000000;
-  font-size: 3.4375rem;
+  font-size: 55px;
   font-weight: 700;
 }
 
 .content .rightside {
   flex: 1;
   height: 100%;
-  max-height: 50.8125rem;
+  max-height: 813px;
 }
 
 .content .leftside img.pencil {
@@ -145,33 +142,31 @@ li.icon img {
 .content .leftside .img-container {
   display: flex;
   justify-content: flex-end;
-  margin-top: 5.5625rem;
-  margin-right: 11.3125rem;
+  margin-top: 89px;
+  margin-right: 181px;
 }
 
 .rightside .img-container {
-  width: 30.9375rem;
+  width: 495px;
   position: relative;
-  margin: 7.5rem 0 0 4.375rem;
+  margin: 120px 0 0 70px;
 }
 
 .app-icons {
   display: flex;
   justify-content: center;
-  margin: 1.75rem 0 0 10rem;
+  margin: 28px 0 0 160px;
 }
 
 .app-icons .mac {
-  margin: 0 0.75rem 0 0;
+  margin: 0 12px 0 0;
 }
 
 .app-icons .android {
-  margin: 0 0 0 0.75rem;
+  margin: 0 0 0 12px;
 }
 
-.rightside .img-container img.first,
-img.second,
-img.third {
+.rightside .img-container img.first, img.second, img.third {
   position: absolute;
   top: 0;
   width: 100%;
@@ -205,7 +200,7 @@ img.third {
   background: #fcf6cc !important;
   z-index: 20;
   width: 100%;
-  height: 39.4375rem;
+  height: 631px;
 }
 
 .card-deck {
@@ -215,8 +210,8 @@ img.third {
 }
 
 .card {
-  width: 20rem;
-  height: 23.75rem;
+  width: 320px;
+  height: 380px;
   max-width: 25%;
   background: #fff4f3;
   margin: 15px 15px 0 0;
@@ -231,13 +226,13 @@ img.third {
 }
 
 .card-image {
-  margin: 0 0 1.5625rem 0;
+  margin: 0 0 25px 0;
 }
 
 .card-title span {
   display: block;
   color: #716b6b;
-  font-size: 1.3125rem;
+  font-size: 21px;
   line-height: 1.4em;
   font: sans-serif;
 }
@@ -248,13 +243,13 @@ img.third {
 }
 
 .message h1 {
-  line-height: 1.6875rem;
-  font-size: 1rem;
+  line-height: 27px;
+  font-size: 16px;
   color: #212017;
 }
 
 .why-us .app-icons {
-  margin: 1.9375rem 0 0 0;
+  margin: 31px 0 0 0;
 }
 
 .usage {
@@ -274,9 +269,11 @@ img.third {
   font-size: 12px;
   line-height: 25px;
 }
+
 .description h2 {
   text-align: center;
 }
+
 .baby-awards {
   width: 100%;
   height: 100px;
@@ -318,6 +315,7 @@ img.third {
   margin: 0 0 0 20px;
   z-index: 10;
 }
+
 .award-winning {
   background: #fcf6cc;
   transform: translateY(-200px);
@@ -325,6 +323,7 @@ img.third {
   width: 100%;
   height: 1300px;
 }
+
 .award-winning .content {
   display: flex;
   flex-direction: column;
@@ -333,24 +332,29 @@ img.third {
   transform: translateY(220px);
   padding: 0px 0px 150px 0;
 }
+
 .award-winning img {
   width: 1149px;
   max-width: 100%;
   height: 657px;
 }
+
 .award-winning .text {
   transform: translateY(-40px);
 }
+
 .award-winning .text p {
-  font-size: 25px;
+  font-size: 35px;
   font-weight: 700;
 }
+
 .award-winning .card-deck {
   display: flex;
   justify-content: space-around;
   width: 100%;
   /* transform: translateY(-50%); */
 }
+
 .award-card {
   display: flex;
   flex-direction: column;
@@ -360,6 +364,7 @@ img.third {
   height: 200px;
   max-width: 100%;
 }
+
 .award-card img {
   width: 105px;
   height: 105px;
@@ -369,12 +374,56 @@ img.third {
   font-size: 16px;
   /* margin: 25px 0 0 0; */
 }
+
+.presentation {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  transform: translateY(-100px);
+}
+
+.presentation .left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 400px;
+}
+
+.presentation .left .text h2 {
+  display: block;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.presentation .left .text {
+  margin: 0 0 0 95px;
+  line-height: 50px;
+}
+
+.presentation .left .text p {
+  font-size: 18px;
+  margin: 15px 0 0 0;
+  line-height: 30px;
+}
+
+.presentation .right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.presentation .app-icons {
+  margin: 28px 0 0 100px;
+}
+
 @keyframes appearing {
   0% {
     opacity: 0;
   }
-  50%,
-  70% {
+  50%, 70% {
     opacity: 1;
   }
   100% {
