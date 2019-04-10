@@ -419,6 +419,97 @@ li.icon img {
   margin: 28px 0 0 100px;
 }
 
+.contact {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  transform: translateY(-150px);
+}
+
+.contact .ask {
+  width: 823px;
+  height: 527px;
+  background: #FFF4F3;
+  margin: 0 40px 0 0;
+}
+
+.contact .subscribe {
+  width: 823px;
+  height: 527px;
+  background: #FFF4F3;
+  margin: 0 0 0 40px;
+}
+
+.ask {
+  display: flex;
+  flex-direction: column;
+}
+
+.ask .title p {
+  font-size: 30px;
+  margin: 100px 0 30px 0;
+}
+
+.ask form .inputs {
+  display: flex;
+  justify-content: center;
+}
+
+.ask form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputs input {
+  padding: 8px 2px;
+  border: none;
+  outline: none;
+  caret-color: #535353;
+  font-size: 20px;
+  width: 200px;
+}
+
+.inputs input:hover {}
+
+.ask form {
+  width: 420px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.ask form textarea {
+  resize: none;
+  width: 100%;
+  border: none;
+  margin: 20px 0 0 0;
+  height: 127px;
+  padding: 10px;
+  font-size: 20px;
+  outline: none;
+}
+
+form input[type="submit"] {
+  padding: 10px 5px;
+  width: 100%;
+  margin: 10px 0 0 0;
+  background: #FC8A7B;
+  outline: none;
+  border: none;
+  color: #FFFEFF;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.inputs input[type="text"] {
+  margin: 0 20px 0 0;
+}
+
+.inputs ::-webkit-input-placeholder {
+  margin: 0 0 0 5px;
+}
+
 @keyframes appearing {
   0% {
     opacity: 0;
