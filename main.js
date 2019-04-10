@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  //ამაზე ასხავს?xo
   // function awaiter() {
   //   setTimeout(function () {
   //     var el = document.getElementsByClassName("turn");
@@ -48,9 +49,9 @@ $(document).ready(function () {
         throw new Error();
       }
     }
-  }, 3000)
+  }, 3000);
 
-  $('a[href^=#]').on("click", function (e) {
+  $("a[href]").on("click", function () {
     var t = $(this.hash);
     console.log("hash", t);
     var t = t.length && t || $('[name=' + this.hash.slice(1) + ']');
@@ -60,5 +61,5 @@ $(document).ready(function () {
       e.preventDefault();
     }
   });
-  $(".slider").slider();
+  $(".owl-carousel").owlCarousel();
 });
