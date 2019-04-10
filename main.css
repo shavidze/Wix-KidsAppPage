@@ -11,7 +11,7 @@ html {
 body {
   font-size: 1rem;
   font-family: "Open Sans", sans-serif !important;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .container {
@@ -91,7 +91,7 @@ nav ul li.item a {
   padding: 5px 8px;
   color: #535353;
   transition: 0.5s;
-  font: normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496, sans-serif;
+  font: sans-serif;
 }
 
 nav ul li.item a:not(.active):hover {
@@ -123,7 +123,7 @@ li.icon img {
 }
 
 .leftside .text h1 {
-  columns: #000000;
+  color: #000000;
   font-size: 55px;
   font-weight: 700;
 }
@@ -147,7 +147,8 @@ li.icon img {
 }
 
 .rightside .img-container {
-  width: 495px;
+  max-width: 495px;
+  width: 100%;
   position: relative;
   margin: 120px 0 0 70px;
 }
