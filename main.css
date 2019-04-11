@@ -105,8 +105,7 @@ li.icon img {
 
 .content {
   width: 100%;
-  height: 920px;
-  min-height: 100%;
+  min-height: 920px;
   display: flex;
 }
 
@@ -211,9 +210,9 @@ li.icon img {
 }
 
 .card {
-  width: 320px;
-  height: 380px;
-  max-width: 25%;
+  max-width: 320px;
+  width: 100%;
+  min-height: 380px;
   background: #fff4f3;
   margin: 15px 15px 0 0;
   display: flex;
@@ -309,8 +308,7 @@ li.icon img {
 }
 
 .reviews .rightside {
-  min-width: 25%;
-  width: 720px;
+  max-width: 720px;
   height: 418px;
   background: #fff4f3;
   margin: 0 0 0 20px;
@@ -396,14 +394,15 @@ li.icon img {
   padding: 0px 0px 150px 0;
 }
 
+/* 
 .award-winning img {
-  width: 1149px;
-  max-width: 100%;
-  height: 657px;
-}
+  max-width: 1149px;
+  width: 100%;
+  min-height: 657px;
+} */
 
 .award-winning .text {
-  transform: translateY(-40px);
+  transform: translateY(22px);
 }
 
 .award-winning .text p {
@@ -415,7 +414,7 @@ li.icon img {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  /* transform: translateY(-50%); */
+  transform: translateY(50%);
 }
 
 .award-card {
@@ -423,13 +422,14 @@ li.icon img {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  width: 200px;
-  height: 200px;
-  max-width: 100%;
+  max-width: 200px;
+  min-height: 200px;
+  width: 100%;
 }
 
 .award-card img {
-  width: 105px;
+  max-width: 105px;
+  width: 100%;
   height: 105px;
 }
 
@@ -479,7 +479,8 @@ li.icon img {
 }
 
 .right .slider {
-  width: 380px;
+  max-width: 380px;
+  width: 100%;
   background: white;
   overflow: hidden;
   box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2);
@@ -487,8 +488,9 @@ li.icon img {
 }
 
 .slider::before, .slider::after {
-  width: 380px;
-  height: 550px;
+  max-width: 380px;
+  width: 100%;
+  min-height: 550px;
   position: absolute;
   content: "";
   background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 3%);
@@ -513,8 +515,9 @@ li.icon img {
 }
 
 .presentation .right img {
-  width: 380px;
-  height: 550px;
+  max-width: 380px;
+  width: 100%;
+  min-height: 550px;
 }
 
 .presentation .app-icons {
@@ -523,22 +526,24 @@ li.icon img {
 
 .contact {
   width: 100%;
-  height: 550px;
+  min-height: 550px;
   display: flex;
   justify-content: center;
   transform: translateY(-150px);
 }
 
 .contact .ask {
-  width: 823px;
-  height: 527px;
+  max-width: 823px;
+  width: 100%;
+  min-height: 527px;
   background: #FFF4F3;
   margin: 0 40px 0 0;
 }
 
 .contact .subscribe {
-  width: 823px;
-  height: 527px;
+  max-width: 823px;
+  width: 100%;
+  min-height: 527px;
   background: #FFF4F3;
   margin: 0 0 0 40px;
 }
@@ -570,14 +575,15 @@ li.icon img {
   outline: none;
   caret-color: #535353;
   font-size: 20px;
-  width: 200px;
+  max-width: 200px;
+  width: 100%;
 }
 
 .inputs input:hover {}
 
 .ask form {
-  width: 420px;
-  max-width: 100%;
+  max-width: 420px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -636,7 +642,6 @@ form input[type="submit"]:hover {
 .subscribe input[type="text"] {
   padding: 10px 5px 10px 5px;
   width: 100%;
-  max-width: 100%;
   font-size: 20px;
   border: none;
 }
@@ -647,8 +652,8 @@ form input[type="submit"]:hover {
 
 .subscribe .email {
   text-align: center;
-  max-width: 100%;
-  width: 423px;
+  width: 100%;
+  max-width: 423px;
   margin: 70px auto 0 auto;
 }
 
@@ -677,7 +682,7 @@ form input[type="submit"]:hover {
 
 .under {
   width: 100%;
-  height: 200px;
+  min-height: 200px;
   background: #FCF6CC;
   transform: translateY(-300px);
   position: relative;
