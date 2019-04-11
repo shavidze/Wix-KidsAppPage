@@ -922,4 +922,44 @@ form input[type="submit"]:hover {
   .presentation .app-icons {
     margin: 28px 0 0 0;
   }
+  .contact {
+    transform: translateY(-91px);
+    flex-direction: column;
+  }
+  .presentation {
+    transform: translateY(-139px);
+  }
+  .contact .ask {
+    width: 85%;
+    margin: auto;
+    min-height: 400px;
+  }
+  .contact .subscribe {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 85%;
+  }
+  .contact .subscribe .title {
+    order: 1;
+    margin: 20px 0 0 0;
+  }
+  .subscribe .title p {
+    font-size: 24px;
+    margin: 38px 0 0px 0;
+  }
+  .subscribe p.rights {
+    order: 4;
+    margin: 40px 0 0 0;
+  }
+  .subscribe .icons {
+    order: 3;
+    margin: 40px 0 0 0;
+  }
+  .subscribe .icons img:not(:last-child) {
+    margin: 0 30px 0 0;
+  }
+  .owl-carousel .item p {
+    font-size: 19px;
+  }
 }
