@@ -71,4 +71,10 @@
       }
     }
   })
+  $(".menu-toggle").click(function (e) {
+    $(".mobile-navigation").toggleClass("closed opened");
+    $("body").toggleClass("scrollable unscrollable");
+    e.preventDefault();
+  })
+
 })();
