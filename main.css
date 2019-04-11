@@ -49,6 +49,10 @@ header {
   height: 26px;
 }
 
+.app-icons#mobile-content {
+  display: none;
+}
+
 .logo-container .text {
   display: inline-block;
   position: relative;
@@ -125,6 +129,10 @@ li.icon img {
   color: #000000;
   font-size: 55px;
   font-weight: 700;
+}
+
+.mobile#rightside {
+  display: none;
 }
 
 .content .rightside {
@@ -212,7 +220,7 @@ li.icon img {
 .card {
   max-width: 320px;
   width: 100%;
-  min-height: 380px;
+  max-height: 380px;
   background: #fff4f3;
   margin: 15px 15px 0 0;
   display: flex;
@@ -724,4 +732,124 @@ form input[type="submit"]:hover {
 
 #showcase-animation img.fade {
   opacity: 1;
+}
+
+@media only screen and (max-width:768px) {
+  html {
+    font-size: 8px;
+  }
+  nav {
+    background: #302F51;
+    width: 70%;
+    position: absolute;
+    top: 0px;
+    height: 100vh;
+    left: 0;
+    transform: translateX(-160%);
+    transition: .5s;
+  }
+  #header-fixed {
+    padding: 15px 10px 0 10px;
+    position: static;
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  .logo-container .text {
+    position: static;
+  }
+  .mobile#rightside {
+    display: flex;
+    align-items: center;
+  }
+  .menu-toggle {
+    font-size: 28px;
+  }
+  .mobile-icons {
+    margin: 0 25px 0 0;
+    font-size: 10px;
+  }
+  .mobile-icons ul {
+    display: flex;
+    align-items: center;
+  }
+  .mobile-icons ul li {
+    list-style-type: none;
+  }
+  .mobile-icons ul li:not(:last-child) {
+    margin: 0 8px 0 0;
+  }
+  .content {
+    flex-direction: column;
+    align-items: center;
+    padding: 37px 0 0 0;
+    margin: 30px 0 0 0;
+  }
+  .content .leftside {
+    flex: 0;
+  }
+  .content .leftside .img-container {
+    display: none;
+  }
+  .content .leftside .text {
+    margin: 0;
+  }
+  .content .leftside .text h1 {
+    font-size: 30px;
+  }
+  .content .leftside .app-icons {
+    display: none;
+  }
+  .content .rightside {
+    width: 90%;
+    flex: 0;
+  }
+  .rightside .img-container {
+    margin: 50px 0 0 0;
+    min-height: 300px;
+  }
+  .app-icons#mobile-content {
+    display: flex;
+    margin: 100px 0 0 0;
+  }
+  .why-us {
+    height: inherit;
+  }
+  .why-us .card-deck {
+    transform: translateY(0%);
+    flex-wrap: wrap;
+  }
+  .why-us .card {
+    margin: 0;
+    width: 50%;
+  }
+  .why-us .message {
+    transform: translateY(60px);
+  }
+  .why-us .app-icons {
+    margin: 80px 0 0 0;
+    padding: 12px 0 60px 0;
+  }
+  .why-us .message h1 {
+    line-height: 23px;
+    font-size: 16px;
+    color: #212017;
+    padding: 0 25px 0 25px;
+  }
+  .usage {
+    height: inherit;
+  }
+  .usage .title {
+    padding: 36px;
+    text-align: center;
+  }
+  .usage .title h2 {
+    font-size: 22px;
+  }
+  .usage .description {
+    padding: 25px 26px 25px 26px;
+  }
 }
