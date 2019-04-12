@@ -190,7 +190,7 @@ li.icon img {
   opacity: 0;
 }
 
-.rightside .img-container img.first {
+.rightside .img-container img {
   animation-name: all;
   animation-duration: 9s;
   animation-iteration-count: infinite;
@@ -200,7 +200,7 @@ li.icon img {
   position: absolute;
   top: 0;
   animation-name: all;
-  animation-duration: -3s;
+  animation-delay: -6s;
   animation-iteration-count: infinite;
 }
 
@@ -208,7 +208,7 @@ li.icon img {
   position: absolute;
   top: 0;
   animation-name: all;
-  animation-duration: -6s;
+  animation-delay: -3s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
