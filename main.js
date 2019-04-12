@@ -51,10 +51,10 @@
     }
   }, 3000);
 
-  $("a[href]").on("click", function () {
+  $("a[href]").on("click", function (e) {
     var t = $(this.hash);
     console.log("hash", t);
-    var t = t.length && t || $('[name=' + this.hash.slice(1) + ']');
+    var t = t.length && t || $('[name="' + this.hash.slice(1) + '"]');
     if (t.length) {
       var tOffset = t.offset().top;
       $('html,body').animate({ scrollTop: tOffset - 20 }, 'slow');
